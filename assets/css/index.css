@@ -1,0 +1,132 @@
+/* Font Family */
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+/* Default Style */
+:root {
+  --primary-font: "Nanum Gothic", sans-serif;
+  --secondary-font:'SquareAntiquaBookOblique';
+  --primary-font-weight: 400;
+  --primary-font-style: normal;
+  --primary-bg-col: #fff;
+  --logo-bg-col: #000;
+  --logo-bg-opacity: 0.6;
+  --primary-button-bg:#596D48;
+  --primary-text-color:black;
+  --secondary-font-color:#fff;
+  --stroke-width: calc(1em / 16);
+  --letter-spacing: calc(1em / 8);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+}
+body{
+    font-family: var(--primary-font);
+    font-style: var(--primary-font-style);
+    font-weight: var(--primary-font-weight);
+}
+/* container */
+.container{
+    width: 100%;
+    display: flex;
+    height: 100vh;
+}
+.form-left{
+  width: 35%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-right{
+  width: calc(100% - 35%);
+}
+.form-left img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  position: relative;
+}
+.card{
+  position: absolute;
+  background: black;
+  opacity: 0.6;
+  color: white;
+  top: 9.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 10px;
+  height:190px;
+}
+.card > img{
+  width: 30%;
+  height: auto;
+  
+}
+.card span{
+  position: absolute;
+  font-family: var(--secondary-font);
+  font-size: 60px;
+  color: var(--secondary-font-color);
+  right: 22px;
+  background-clip: text;
+  background-image: linear-gradient(to right, #6aae9c, #3b81a6, #b368b3, #c45d5d);
+  letter-spacing: var(--letter-spacing);
+  padding: calc(--stroke-width / 2);
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-stroke-width: var(--stroke-width);
+  margin-right: 40px;
+  border-top-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+/* Form-right section */
+
+.form-right{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding:8rem 2.5rem;
+}
+.form-content{
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-right .form-content p{
+ font-weight: bolder;
+}
+.form-right .form-content span{
+  font-style: italic;
+}
+.text-bottom{
+  margin-bottom:4rem;
+}
+.text-upper{
+  margin-bottom: 2.1rem;
+}
+.wrapper{
+    width: 100%;
+  }
+.wrapper form{
+  background-color: var(--primary-bg-col);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  border: 1px solid #fff;
+  padding: 2px 2px;
+  
+}
+.wrapper form h2{
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+form{
+  display: grid;
+  grid-template-columns: repeat();
+}
